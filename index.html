@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="./style.css">
+  
+    <title>Vite App</title>
+  </head>
+  <body class="bg-slate-500">
+    <header class="bg-white">
+      <div class="container mx-auto py-4 flex items-center justify-between">
+          <div class="flex items-center">
+              <img src="assets/img/venpu-logo.webp" alt="Logo de tu sitio" class="w-[200px] h-auto mr-2">
+              
+          </div>
+          <nav>
+              <ul class="flex space-x-4 text-black font-bold">
+                  <li><a href="#">INICIO</a></li>
+                  <li><a href="#">SOLICITAR REPORTE</a></li>
+                  <li><a href="#">SERVICIOS</a></li>
+                  <li><a href="#">CONTACTO</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+    <div class="hero h-80 py-[100px]">
+      <div class="container mx-auto">
+        <div class="title flex flex-col justify-center">
+          <p class="text-3xl text-center font-semibold pb-5 text-yellow-300">Su informe más económico, más rápido </p>
+          <h1 class="text-6xl font-bold text-center px-48 text-white">
+            Consulta la información oficial de un vehículo por solo <span class="text-yellow-300">$7.490
+            </span>
+          </h1>
+       </div>
+      </div>
+
+      <div class="flex items-center justify-center pt-10" >
+        <div class="flex items-center justify-center">
+          <div class="bg-white shadow-md p-4 rounded-xl">
+            <form class="flex flex-col space-y-5">
+              <div class="flex flex-col md:flex-row md:space-x-10 md:items-center">
+                <div class="w-full md:w-1/2">
+                  <label for="patente" class="block text-gray-700 font-bold pb-2">Patente:</label>
+                  <input type="text" id="patente" name="patente" placeholder="Ejemplo: bbbb11" class="px-4 py-3 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="w-full md:w-1/2">
+                  <label for="email" class="block text-gray-700 font-bold pb-2">Correo Electrónico:</label>
+                  <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" class="px-4 py-3 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500">
+                </div>
+
+                <div class="w-full md:w-1/2">
+                  <button type="submit" class="bg-yellow-300 text-black font-bold py-3 px-6 rounded-full hover:bg-yellow-400 transition duration-300 ease-in-out w-full">Solcitar Reporte</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    <footer></footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
