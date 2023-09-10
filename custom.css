@@ -1,0 +1,85 @@
+:root{
+    --yellow-color:#FDE047;
+}
+
+.item-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 24px 20px;
+    width: 384px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #EBF1F5;
+    box-shadow: 0px 4px 10px rgba(143, 171, 195, 0.6);
+    border-radius: 24px;
+    margin-bottom: 40px;
+}
+
+.arrow {
+    width: 90px;
+    height: 90px;
+    transform: scaleX(-1); /* Voltea horizontalmente la flecha */
+    position: absolute;
+    right:-80px;
+    top:-5px;
+}
+
+/* Estilos para el menú normal en pantallas grandes */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Cambiamos el fondo a transparente */
+    padding: 10px 20px;
+    color: black;
+  }
+  
+  ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  ul.menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Estilos para el menú hamburguesa en pantallas pequeñas */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black; /* Cambiamos el color de las barras a negro */
+    margin: 3px 0;
+  }
+  
+  /* Media query para mostrar el menú hamburguesa en tamaños de pantalla más pequeños */
+  @media screen and (max-width: 769px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    ul.menu {
+      display: none;
+      flex-direction: column;
+      background-color: black; /* Cambiamos el fondo del menú desplegable a negro */
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+    }
+  
+    ul.menu.active {
+      display: flex;
+    }
+  }
+  

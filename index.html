@@ -7,39 +7,46 @@
     <link rel="stylesheet" href="./custom.css">
     <link rel="stylesheet" href="./style.css">
   
-    <title>Vite App</title>
+    <title>Venpu</title>
   </head>
   <body class="bg-slate-500">
-    <header class="bg-white">
+    <header class="bg-white fixed top-0 shadow-md w-full z-10">
       <div class="container mx-auto py-4 flex items-center justify-between">
           <div class="flex items-center">
-              <img src="assets/img/venpu-logo.webp" alt="Logo de tu sitio" class="w-[200px] h-auto mr-2">
-              
+              <img src="/public/img/venpu-logo.webp" alt="Logo de tu sitio" class="w-[200px] h-auto mr-2">
           </div>
           <nav>
-              <ul class="flex space-x-4 text-black font-bold">
-                  <li><a href="#">INICIO</a></li>
-                  <li><a href="#">SOLICITAR REPORTE</a></li>
-                  <li><a href="#">SERVICIOS</a></li>
-                  <li><a href="#">CONTACTO</a></li>
-              </ul>
+            <div class="menu-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <ul class="menu">
+              <li><a href="#">INICIO</a></li>
+              <li><a href="#">SOLICITAR REPORTE</a></li>
+              <li><a href="#">SERVICIOS</a></li>
+              <li><a href="#">CONTACTO</a></li>
+            </ul>
           </nav>
       </div>
   </header>
-    <div class="hero h-80 py-[100px]">
+    <div class="hero flex flex-col justify-center items-center h-screen w-full">
       <div class="container mx-auto">
-        <div class="title flex flex-col justify-center">
+        <div class="title flex flex-col justify-center relative">
           <p class="text-3xl text-center font-semibold pb-5 text-yellow-300">Su informe más económico, más rápido </p>
-          <h1 class="text-6xl font-bold text-center px-48 text-white">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center px-10 sm:px-10 md:px-48 text-white leading-tight">
             Consulta la información oficial de un vehículo por solo <span class="text-yellow-300">$7.490
             </span>
+            
           </h1>
+          <p class="text-center text-xl pt-3 text-white">¡Descubre la historia completa de tu vehículo en minutos!</p>
+          
        </div>
       </div>
 
       <div class="flex items-center justify-center pt-10" >
         <div class="flex items-center justify-center">
-          <div class="bg-white shadow-md p-4 rounded-xl">
+          <div class="bg-white shadow-md p-4 rounded-xl relative">
             <form class="flex flex-col space-y-5">
               <div class="flex flex-col md:flex-row md:space-x-10 md:items-center">
                 <div class="w-full md:w-1/2">
@@ -56,12 +63,85 @@
                 </div>
               </div>
             </form>
+
+            <div class="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 500 511.61"><path fill="#FDE047" fill-rule="nonzero" d="m281.46 249.66-15.5-101.27c-.57-3.8.47-7.81 3.19-10.93 4.92-5.64 13.5-6.24 19.14-1.32l207.07 180.38 1.53 1.59c4.77 5.76 3.96 14.32-1.8 19.08L288.02 508.53c-2.99 2.41-6.96 3.59-11.03 2.87-7.34-1.32-12.23-8.36-10.91-15.69l15.44-85.83c-17.98-2.09-37.59-6.57-57.77-13.36-52.66-17.69-109.96-51.41-153.32-100.33C26.64 246.79-3.02 181.98.25 102.58 1.42 73.66 7 42.84 17.88 10.23 19.22 4.95 23.7.78 29.43.1c7.44-.88 14.19 4.44 15.06 11.87 11.93 100.08 50.53 158.11 98.25 191.8 42.65 30.12 93.19 41.35 138.72 45.89z"/></svg>
+            </div>
           </div>
         </div>
       </div>
       
       
     </div>
+
+    <section>
+      <div class="container mx-auto">
+        <div class="pt-10 flex flex-col md:flex-row">
+          <!-- Contenedor de la imagen -->
+          <div class="w-full md:w-1/2 p-10">
+            <img src="/public/img/venpu-car.svg" alt="vehículo usados" />
+          </div>
+        
+          <!-- Contenedor del texto -->
+          <div class="w-full md:w-1/2 p-5 flex flex-col justify-center">
+            <h3 class="text-5xl font-bold text-yellow-300 leading-tight">¿Estás pensando en comprar un vehículo usado?</h3>
+            <p class="text-white pt-5 leading-tight">Comprar un vehículo usado puede ser una decisión financiera inteligente, pero es esencial abordar esta tarea con precaución y cuidado. Antes de sumergirte en la búsqueda de tu próximo automóvil, considera algunos consejos clave que te ayudarán a tomar la mejor decisión posible.</p>
+          </div>
+        </div>
+        
+
+        <div class="flex flex-col md:flex-row pt-20">
+
+          <div class="w-full md:w-1/2 p-5 flex flex-col justify-center">
+            <h3 class="text-5xl font-bold text-yellow-300 leading-tight">¿Quieres asegurarte de que tu vehículo sea seguro y confiable?</h3>
+            <p class="text-white pt-5 leading-tight">Para asegurar la seguridad y confiabilidad de tu vehículo, programa mantenimientos regulares, sigue las recomendaciones del fabricante, y utiliza piezas de repuesto de calidad. Mantén tus registros de servicio actualizados y verifica si tu vehículo está sujeto a retiradas. Estas prácticas garantizarán tu seguridad en la carretera y prolongarán la vida útil de tu automóvil.</p>
+          </div>
+
+          <div class="w-full md:w-1/2 p-5">
+            <img src="/public/img/venpu-seguro.svg" alt="vehículo usados" />
+          </div>
+
+        </div>
+
+        <div class="flex flex-col md:flex-row pt-20">
+
+          <div class="w-full md:w-1/2 p-5">
+            <img src="/" alt="vehículo usados" />
+          </div>
+
+          <div class="w-full md:w-1/2 p-5 flex flex-col justify-center">
+            <h3 class="text-5xl font-bold text-yellow-300 leading-tight">¿Quieres conocer el historial de tu auto antes de venderlo?</h3>
+            <p class="text-white pt-5 leading-tight">Comprar un vehículo usado puede ser una decisión financiera inteligente, pero es esencial abordar esta tarea con precaución y cuidado. Antes de sumergirte en la búsqueda de tu próximo automóvil, considera algunos consejos clave que te ayudarán a tomar la mejor decisión posible.</p>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <!-- <section class="pt-[100px]">
+      <h2 class="text-white font-bold text-4xl text-center "> Toma decisiones informadas al comprar o vender un vehículo</h2>
+      <p class="text-center text-white font-semibold pb-10">Un historial completo para tomar una decisión antes vender o comprar un auto.</p>
+      <div class="box flex container mx-auto pt-10">
+         <div class="w-1/2">
+            <div class="item-box"><p class="font-semibold">Multas, infracciones y deudas</p></div>
+            <div class="item-box"><p class="font-semibold">Historial de dueños y kilometraje</p></div>
+            <div class="item-box"><p class="font-semibold">Historial de uso e información legal</p></div>
+            <div class="item-box"><p class="font-semibold">Historial de permisos de circulación</p></div>
+            <div class="item-box"><p class="font-semibold">Información técnica y mecánica</p></div>
+         </div>
+         <div class="w-1/2">
+          <img src="/" />
+         </div>
+         <div class="w-1/2">
+          <div class="item-box"><p class="font-semibold">Situación actual</p></div>
+          <div class="item-box"><p class="font-semibold">Historial de revisión técnica</p></div>
+          <div class="item-box"><p class="font-semibold">Historial de venta o remate por accidentes</p></div>
+          <div class="item-box"><p class="font-semibold">Información básica</p></div>
+          <div class="item-box"><p class="font-semibold">Documentos descargables</p></div>
+         </div>
+      </div>
+    </section> -->
     <footer></footer>
     <script type="module" src="/main.js"></script>
   </body>
