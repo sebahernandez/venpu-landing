@@ -83,3 +83,12 @@ nav {
     }
   }
   
+
+
+  /* Media Queries */
+
+@media (max-width:768px){
+  .arrow {
+    display: none;
+}
+}
