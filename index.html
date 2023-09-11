@@ -1,148 +1,355 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./custom.css">
-    <link rel="stylesheet" href="./style.css">
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./custom.css" />
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Venpu</title>
   </head>
   <body class="bg-slate-500">
     <header class="bg-white fixed top-0 shadow-md w-full z-10">
       <div class="container mx-auto py-4 flex items-center justify-between">
-          <div class="flex items-center pl-5">
-              <img src="/public/img/venpu-logo.webp" alt="Logo de tu sitio" class="w-[150px] h-auto mr-2">
+        <div class="flex items-center pl-5">
+          <img
+            src="/img/venpu-logo.webp"
+            alt="Logo de tu sitio"
+            class="w-[150px] h-auto mr-2"
+          />
+        </div>
+        <nav>
+          <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-          <nav>
-            <div class="menu-toggle">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-            <ul class="menu">
-              <li><a href="#">INICIO</a></li>
-              <li><a href="#">SOLICITAR REPORTE</a></li>
-              <li><a href="#">SERVICIOS</a></li>
-              <li><a href="#">CONTACTO</a></li>
-            </ul>
-          </nav>
+          <ul class="menu">
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">SOLICITAR REPORTE</a></li>
+            <li><a href="#">SERVICIOS</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+        </nav>
       </div>
-  </header>
+    </header>
     <div class="hero flex flex-col justify-center items-center h-screen w-full">
       <div class="container mx-auto">
-        <div class="title flex flex-col justify-center relative">
-          <p class="px-10 md:px-0 text-sm md:text-4xl text-center font-semibold pb-5 text-yellow-300">Su informe más económico, más rápido </p>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center px-10 sm:px-10 md:px-48 text-white leading-tight">
-            Consulta la información oficial de un vehículo por solo <span class="text-yellow-300">$7.490
-            </span>
+        <div class="title flex flex-col justify-center relative pt-[300px] md:pt-[0px]">
+          <p
+            class="px-10 md:px-0 text-sm md:text-4xl text-center font-semibold pb-5 gradient-text"
+          >
+            Su informe más económico, más rápido
+          </p>
+          <h1
+            class="text-3xl sm:text-4xl md:text-6xl font-bold text-center px-10 sm:px-10 md:px-48 text-white leading-tight"
+          >
+            Consulta la información oficial de un vehículo por solo
+            <span class="font-bold linear-wipe">$7.490 </span>
           </h1>
-          <p class="text-center text-sm md:text-xl pt-3 px-20 md:px-0 text-white">¡Descubre la historia completa de tu vehículo en minutos!</p>
-          
-       </div>
+          <p
+            class="text-center md:text-xl pt-3 px-20 md:px-0 text-xl text-gray-300 mb-4"
+          >
+            ¡Descubre la historia completa de tu vehículo en minutos!
+          </p>
+        </div>
       </div>
 
-      <div class="flex items-center justify-center pt-10" >
+      <div class="flex items-center justify-center pt-10">
         <div class="flex items-center justify-center">
           <div class="bg-white shadow-md p-4 rounded-xl relative">
             <form class="flex flex-col space-y-5">
-              <div class="flex flex-col md:flex-row md:space-x-10 md:items-center">
+              <div
+                class="flex flex-col md:flex-row md:space-x-10 md:items-center"
+              >
                 <div class="w-full md:w-1/2 pt-2 md:pt-0">
-                  <label for="patente" class="block text-gray-700 font-bold pb-2">Patente:</label>
-                  <input type="text" id="patente" name="patente" placeholder="Ejemplo: bbbb11" class="px-4 py-3 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500">
+                  <label
+                    for="patente"
+                    class="block text-gray-700 font-bold pb-2"
+                    >Patente:</label
+                  >
+                  <input
+                    type="text"
+                    id="patente"
+                    name="patente"
+                    placeholder="Ejemplo: bbbb11"
+                    class="px-4 py-3 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500"
+                  />
                 </div>
                 <div class="w-full md:w-1/2 pt-5 md:pt-0">
-                  <label for="email" class="block text-gray-700 font-bold pb-2">Correo Electrónico:</label>
-                  <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" class="px-4 py-3 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500">
+                  <label for="email" class="block text-gray-700 font-bold pb-2"
+                    >Correo Electrónico:</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="ejemplo@correo.com"
+                    class="px-4 py-3 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500"
+                  />
                 </div>
 
                 <div class="w-full md:w-1/2 pt-5 md:pt-0">
-                  <button type="submit" class="bg-yellow-300 text-black font-bold py-3 px-6 rounded-full hover:bg-yellow-400 transition duration-300 ease-in-out w-full">Solcitar Reporte</button>
+                  <button
+                    type="submit"
+                    class="bg-yellow-300 text-black font-bold py-3 px-6 rounded-full hover:bg-yellow-400 transition duration-300 ease-in-out w-full"
+                  >
+                    Solcitar Reporte
+                  </button>
                 </div>
               </div>
             </form>
-
-            <div class="arrow">
-              <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 500 511.61"><path fill="#FDE047" fill-rule="nonzero" d="m281.46 249.66-15.5-101.27c-.57-3.8.47-7.81 3.19-10.93 4.92-5.64 13.5-6.24 19.14-1.32l207.07 180.38 1.53 1.59c4.77 5.76 3.96 14.32-1.8 19.08L288.02 508.53c-2.99 2.41-6.96 3.59-11.03 2.87-7.34-1.32-12.23-8.36-10.91-15.69l15.44-85.83c-17.98-2.09-37.59-6.57-57.77-13.36-52.66-17.69-109.96-51.41-153.32-100.33C26.64 246.79-3.02 181.98.25 102.58 1.42 73.66 7 42.84 17.88 10.23 19.22 4.95 23.7.78 29.43.1c7.44-.88 14.19 4.44 15.06 11.87 11.93 100.08 50.53 158.11 98.25 191.8 42.65 30.12 93.19 41.35 138.72 45.89z"/></svg>
-            </div>
           </div>
         </div>
       </div>
-      
-      
     </div>
 
-    <section>
+    <section class="py-[50px]">
       <div class="container mx-auto">
         <div class="pt-10 flex flex-col md:flex-row">
           <!-- Contenedor de la imagen -->
           <div class="w-full md:w-1/2 p-10">
-            <img src="/public/img/Venpu-buy.svg" alt="vehículo usados" class="w-[70%] mx-auto" />
+            <img
+              src="/img/Venpu-buy.svg"
+              alt="vehículo usados"
+              class="w-[70%] mx-auto"
+            />
           </div>
-        
+
           <!-- Contenedor del texto -->
           <div class="w-full md:w-1/2 p-5 flex flex-col justify-center">
-            <h3 class="text-3xl md:text-5xl font-bold text-yellow-300 leading-tight text-center md:text-left">¿Estás pensando en comprar un vehículo usado?</h3>
-            <p class="text-white pt-5 leading-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus placeat provident perspiciatis. Odio cupiditate cum blanditiis odit nostrum? Dignissimos neque eius sequi sint reprehenderit perferendis voluptatem, tempora fugit voluptas!.</p>
+            <h3
+              class="text-3xl md:text-5xl font-bold text-yellow-300 leading-tight text-center md:text-left"
+            >
+              ¿Estás pensando en comprar un vehículo usado?
+            </h3>
+            <p class="text-gray-300 pt-5 leading-tight text-xl text-center md:text-left">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              temporibus placeat provident perspiciatis.
+            </p>
           </div>
         </div>
-        
 
         <div class="flex flex-col md:flex-row pt-20">
-
-          <div class="w-full md:w-1/2 p-5 order-first  md:order-last">
-            <img src="/public/img/venpu-seguro.svg" alt="vehículo usados" class="w-[70%] mx-auto" />
+          <div class="w-full md:w-1/2 p-5 order-first md:order-last">
+            <img
+              src="/img/venpu-seguro.svg"
+              alt="vehículo usados"
+              class="w-[70%] mx-auto"
+            />
           </div>
-        
+
           <div class="w-full md:w-1/2 p-5 flex flex-col justify-center">
-            <h3 class="text-3xl md:text-5xl font-bold text-yellow-300 leading-tight text-center md:text-left">¿Quieres asegurarte de que tu vehículo sea seguro y confiable?</h3>
-            <p class="text-white pt-5 leading-tight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repudiandae laboriosam fugiat nostrum ducimus molestias a commodi. Illo, officia ad saepe perspiciatis facere animi non, vel commodi aut, ullam assumenda.</p>
+            <h3
+              class="text-3xl md:text-5xl font-bold text-yellow-300 leading-tight text-center md:text-left"
+            >
+              ¿Quieres asegurarte de que tu vehículo sea seguro y confiable?
+            </h3>
+            <p class="text-gray-300 pt-5 leading-tight text-xl text-center md:text-left">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              repudiandae laboriosam fugiat nostrum.
+            </p>
           </div>
-        
         </div>
-        
 
         <div class="flex flex-col md:flex-row pt-20">
-
           <div class="w-full md:w-1/2 p-5">
-            <img src="/public/img/venta-venpu.svg" alt="vehículo usados" class="w-[70%] mx-auto" />
+            <img
+              src="/img/venta-venpu.svg"
+              alt="vehículo usados"
+              class="w-[70%] mx-auto"
+            />
           </div>
 
           <div class="w-full md:w-1/2 p-5 flex flex-col justify-center">
-            <h3 class="text-3xl md:text-5xl font-bold text-yellow-300 leading-tight text-center md:text-left">¿Quieres conocer el historial de tu auto antes de venderlo?</h3>
-            <p class="text-white pt-5 leading-tight">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus nam libero labore dolor natus commodi, eligendi nemo. Aut nesciunt accusantium et vitae dolores, consectetur officia doloribus nulla pariatur possimus sint.</p>
+            <h3
+              class="text-3xl md:text-5xl font-bold text-yellow-300 leading-tight text-center md:text-left"
+            >
+              ¿Quieres conocer el historial de tu auto antes de venderlo?
+            </h3>
+            <p class="text-gray-300 pt-5 leading-tight text-xl text-center md:text-left">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloribus nam libero labore dolor.
+            </p>
           </div>
-          
         </div>
       </div>
-
     </section>
 
-    <!-- <section class="pt-[100px]">
-      <h2 class="text-white font-bold text-4xl text-center "> Toma decisiones informadas al comprar o vender un vehículo</h2>
-      <p class="text-center text-white font-semibold pb-10">Un historial completo para tomar una decisión antes vender o comprar un auto.</p>
-      <div class="box flex container mx-auto pt-10">
-         <div class="w-1/2">
-            <div class="item-box"><p class="font-semibold">Multas, infracciones y deudas</p></div>
-            <div class="item-box"><p class="font-semibold">Historial de dueños y kilometraje</p></div>
-            <div class="item-box"><p class="font-semibold">Historial de uso e información legal</p></div>
-            <div class="item-box"><p class="font-semibold">Historial de permisos de circulación</p></div>
-            <div class="item-box"><p class="font-semibold">Información técnica y mecánica</p></div>
-         </div>
-         <div class="w-1/2">
-          <img src="/" />
-         </div>
-         <div class="w-1/2">
-          <div class="item-box"><p class="font-semibold">Situación actual</p></div>
-          <div class="item-box"><p class="font-semibold">Historial de revisión técnica</p></div>
-          <div class="item-box"><p class="font-semibold">Historial de venta o remate por accidentes</p></div>
-          <div class="item-box"><p class="font-semibold">Información básica</p></div>
-          <div class="item-box"><p class="font-semibold">Documentos descargables</p></div>
-         </div>
+    <section class="py-[50px]">
+      <h2
+        class="font-bold text-3xl md:text-5xl text-center text-yellow-300 py-5 md:px-[300px]"
+      >
+        Toma decisiones informadas al comprar o vender un vehículo
+      </h2>
+      <p class="text-gray-300 pt-5 leading-tight text-xl text-center pb-10">
+        Un historial completo para tomar una decisión antes de vender o comprar
+        un auto.
+      </p>
+      <div
+        class="box flex-col md:flex md:flex-row container mx-auto px-5 py-10 items-center"
+      >
+        <div
+          class="w-full md:w-1/2 order-first md:order-last flex justify-center pb-5"
+        >
+          <!-- Utiliza order-first en dispositivos móviles y tablets -->
+          <img src="/img/movil.webp" alt="movil" class="w-[80%]" />
+        </div>
+        <div class="w-full md:w-1/2">
+          <div class="item-box">
+            <p class="font-semibold">Multas, infracciones y deudas</p>
+          </div>
+          <div class="item-box">
+            <p class="font-semibold">Historial de dueños y kilometraje</p>
+          </div>
+          <div class="item-box">
+            <p class="font-semibold">Historial de uso e información legal</p>
+          </div>
+          <div class="item-box">
+            <p class="font-semibold">Historial de permisos de circulación</p>
+          </div>
+          <div class="item-box">
+            <p class="font-semibold">Información técnica y mecánica</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 order-last md:order-last">
+          <!-- Utiliza order-last en dispositivos móviles y tablets -->
+          <div class="item-box">
+            <p class="font-semibold">Situación actual</p>
+          </div>
+          <div class="item-box">
+            <p class="font-semibold">Historial de revisión técnica</p>
+          </div>
+          <div class="item-box">
+            <p class="font-semibold">
+              Historial de venta o remate por accidentes
+            </p>
+          </div>
+          <div class="item-box">
+            <p class="font-semibold">Información básica</p>
+          </div>
+          <div class="item-box">
+            <p class="font-semibold">Documentos descargables</p>
+          </div>
+        </div>
       </div>
-    </section> -->
-    <footer></footer>
+    </section>
+
+    <section class="py-[50px]">
+      <h2
+        class="text-center text-3xl md:text-5xl font-bold text-yellow-300 py-20"
+      >
+        ¿Cómo funciona el nuestro informe?
+      </h2>
+      <div class="flex flex-col md:flex-row container mx-auto">
+        <div class="w-full md:w-1/2 p-10">
+          <img
+            src="/img/form.svg"
+            alt="formulario"
+            class="w-[100px] white-icon mx-auto"
+          />
+          <h4 class="text-2xl pt-2 text-yellow-300 font-semibold text-center">
+            Completa el formulario
+          </h4>
+          <p class="text-gray-300 pt-5 leading-tight text-xl text-center">
+            Ingresa la patente del vehículo y sigue los pasos
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 p-10">
+          <img
+            src="/img/data.svg"
+            alt="data"
+            class="w-[100px] white-icon mx-auto"
+          />
+          <h4 class="text-2xl pt-2 text-yellow-300 font-semibold text-center">
+            Recopilamos toda la información
+          </h4>
+          <p class="text-gray-300 pt-5 leading-tight text-xl text-center">
+            Venpu se conecta a cientos de fuentes de información oficiales y
+            genera el informe.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2 p-10">
+          <img
+            src="/img/check.svg"
+            alt="data"
+            class="w-[100px] white-icon mx-auto"
+          />
+          <h4 class="text-2xl pt-2 text-yellow-300 font-semibold text-center">
+            ¡Informe Listo!
+          </h4>
+          <p class="text-gray-300 pt-5 leading-tight text-xl text-center">
+            Puedes ver el informe en el sitio web o en tu correo electrónico
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-[100px]">
+      <div
+        class="bg-white text-white p-10 md:p-20 md:flex container rounded-lg md:mx-auto"
+      >
+        <!-- Div 1 -->
+        <div class="mb-4 md:mb-0 p-3">
+          <p class="text-2xl pt-2 text-slate-600 font-semibold pb-2">
+            ¿Por qué elegir Venpu?
+          </p>
+          <p class="text-slate-400">
+            + 4 millones de informes entregadoslenos y chilenas que quieren conocer el
+            historial completo y actualizado de un vehículo usado.
+          </p>
+        </div>
+
+        <!-- Div 2 -->
+        <div class="mb-4 md:mb-0 p-3">
+          <p class="text-2xl pt-2 text-slate-600 font-semibold pb-2">
+            + 500 mil transferencias online de vehículos
+          </p>
+          <p class="text-slate-400">
+            Transferir un vehículo nunca fue tan fácil y seguro. Misma validez
+            que el trámite presencial y con la firma de notarios oficiales.
+          </p>
+        </div>
+
+        <!-- Div 3 - Imagen -->
+        <div>
+          <img
+            src="/img/venpu-logo.webp"
+            alt="Imagen"
+            class="w-[70%] md:w-50 md:h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-slate-600 text-white py-20 "
+    >
+      <div class="container mx-auto md:flex md:justify-between md:items-center">
+        <!-- Div 1 -->
+        <div class="mb-4 md:mb-0">
+          <p class="text-2xl font-semibold pb-3 ">Venpu SpA</p>
+          <p>Todos los derechos reservados @2023</p>
+          <p>Terminos y condiciones</p>
+        </div>
+
+        <!-- Div 2 - Redes Sociales -->
+        <div class="md:text-center">
+          <!-- Agrega aquí tus iconos de redes sociales -->
+          <a href="#" class="text-white text-2xl mr-2">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#" class="text-white text-2xl mr-2">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="#" class="text-white text-2xl mr-2">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
