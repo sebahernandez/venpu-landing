@@ -138,6 +138,7 @@ ul.menu li a {
   -webkit-animation: shine 5s linear infinite;
           animation: shine 5s linear infinite;
 }
+
 @-webkit-keyframes shine {
   to {
     background-position: 300% center;
