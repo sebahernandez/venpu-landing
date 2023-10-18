@@ -2,6 +2,10 @@
   --yellow-color: #fde047;
   --text-color:#9CA3B0;
 }
+
+html{
+  scroll-behavior: smooth;
+}
 .hero {
   width: 100%;
   height: 100vh;
