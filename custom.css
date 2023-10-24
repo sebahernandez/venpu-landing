@@ -159,6 +159,11 @@ ul.menu li a {
           animation: shine 5s linear infinite;
 }
 
+#step2, #step3, #step4 {
+  display: none;
+}
+
+
 @-webkit-keyframes shine {
   to {
     background-position: 300% center;

@@ -54,53 +54,77 @@
           </p>
         </div>
       </div>
-
+  
       <div class="flex items-center justify-center pt-10 z-10">
-        <div class="flex items-center justify-center">
-          <div class="bg-white shadow-md p-4 rounded-xl relative">
-            <form class="flex flex-col space-y-5">
-              <div
-                class="flex flex-col md:flex-row md:space-x-10 md:items-center"
-              >
-                <div class="w-full md:w-1/2 pt-2 md:pt-0">
-                  <label
-                    for="patente"
-                    class="block text-gray-700 font-bold pb-2"
-                    >Patente:</label
-                  >
-                  <input
-                    type="text"
-                    id="patente"
-                    name="patente"
-                    placeholder="Ejemplo: bbbb11"
-                    class="px-4 py-3 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500"
-                  />
-                </div>
-                <div class="w-full md:w-1/2 pt-5 md:pt-0">
-                  <label for="email" class="block text-gray-700 font-bold pb-2"
-                    >Correo Electrónico:</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="ejemplo@correo.com"
-                    class="px-4 py-3 border border-gray-300 rounded-md w-full focus:outline-none focus:border-blue-500"
-                  />
-                </div>
-
-                <div class="w-full md:w-1/2 pt-5 md:pt-0">
-                  <button
-                    type="submit"
-                    class="bg-yellow-300 text-black font-bold py-3 px-6 rounded-full hover:bg-yellow-400 transition duration-300 ease-in-out w-full"
-                  >
-                    Solicitar Reporte
-                  </button>
-                </div>
+        <div class="bg-white p-6 rounded shadow-md">
+          <div id="step1" class="space-y-4">
+              <h3 class="pb-3">Ingresa los datos</h3>
+              <div>
+                  <form class="space-y-4">
+                      <div>
+                          <label for="Version" class="block text-sm font-medium text-gray-700"> Version</label>
+                          <input id="version" class="mt-1 p-2 w-full border rounded-md" type="text" placeholder="1.5 COMFORT AMT AT AP" />
+                      </div>
+      
+                      <div class="flex flex-wrap -mx-2">
+                          <div class="w-1/2 px-2">
+                              <label for="region" class="block text-sm font-medium text-gray-700">Region</label>
+                              <select id="region" class="mt-1 block w-full p-2 border rounded-md">
+                                  <option selected>Selecciona una región</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                              </select>
+                          </div>
+      
+                          <div class="w-1/2 px-2">
+                              <label for="kilometraje" class="block text-sm font-medium text-gray-700">Patente:</label>
+                              <input type="text" class="mt-1 p-2 w-full border rounded-md" placeholder="Ejemplo:bbbb11"/>
+                          </div>
+                      </div>
+                  </form>
               </div>
-            </form>
+              <button type="submit" class="w-full mt-4 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500" onclick="nextStep(2)">Siguiente</button>
           </div>
-        </div>
+      
+          <div id="step2" class="space-y-4">
+              <h3>Datos para generar la venta</h3>
+              <form class="space-y-4">
+                  <div>
+                      <label for="rut" class="block text-sm font-medium text-gray-700"> Tu RUT: </label>
+                      <input type="text" class="mt-1 p-2 w-full border rounded-md" placeholder="Se necesita para su boleta" />
+                  </div>
+      
+                  <div>
+                      <label for="name" class="block text-sm font-medium text-gray-700"> Tu Nombre: </label>
+                      <input type="text" class="mt-1 p-2 w-full border rounded-md" placeholder="Ej:Juan Perez Lopez" />
+                  </div>
+      
+                  <div>
+                      <label for="tu email" class="block text-sm font-medium text-gray-700"> Tu Email: </label>
+                      <input type="email" class="mt-1 p-2 w-full border rounded-md" placeholder="Ej:sunombre@email.com" />
+                  </div>
+              </form>
+      
+              <div class="flex space-x-4">
+                  <button type="submit" class="w-1/2 mt-4 px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900" onclick="previousStep(2)">Atras</button>
+                  <button class="w-1/2 mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700" onclick="nextStep(3)">Siguiente</button>
+              </div>
+          </div>
+      
+          <div id="step3" class="space-y-4">
+              <h2>Paso 3</h2>
+              <input type="text" class="mt-1 p-2 w-full border rounded-md" placeholder="Ingresa algo..." />
+              <button class="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" onclick="nextStep(4)">Siguiente</button>
+          </div>
+      
+          <div id="step4" class="space-y-4">
+              <h2>Paso 4</h2>
+              <input type="text" class="mt-1 p-2 w-full border rounded-md" placeholder="Ingresa algo..." />
+              <button class="w-full mt-4 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700" onclick="finish()">Finalizar</button>
+          </div>
+      </div>
+      
       </div>
       <div class="absolute bottom-0 h-20 w-full" style="background: linear-gradient(to bottom, rgba(100, 116, 139, 0.2), rgba(100, 116, 139, 100))"></div>
 
