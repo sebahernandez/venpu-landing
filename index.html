@@ -161,7 +161,75 @@
             </div>
           </div>
 
+         <!--Campos respuesta de API-->
           <div id="step3" class="space-y-4">
+            <h3>Datos de tu vehículo</h3>
+            <form class="space-y-4">
+              <!-- Input superior (RUT) -->
+              <div>
+                <label
+                  for="rut"
+                  class="block text-sm font-medium text-gray-700"
+                >
+                  PPU
+                </label>
+                <input
+                  type="text"
+                  class="mt-1 p-2 w-full border rounded-md"
+               
+                />
+              </div>
+
+              <!-- Contenedor Flex para los otros dos inputs -->
+              <div class="flex space-x-4">
+                <div class="w-1/2">
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700"
+                  >
+                    TYPE
+                  </label>
+                  <input
+                    type="text"
+                    class="mt-1 p-2 w-full border rounded-md"
+                 
+                  />
+                </div>
+                <div class="w-1/2">
+                  <label
+                    for="tu email"
+                    class="block text-sm font-medium text-gray-700"
+                  >
+                    MAKE
+                  </label>
+                  <input
+                    type="email"
+                    class="mt-1 p-2 w-full border rounded-md"
+                    
+                  />
+                </div>
+              </div>
+            </form>
+
+            <!-- Botones Atras y Siguiente -->
+            <div class="flex space-x-4">
+              <button
+                type="submit"
+                class="w-1/2 mt-4 px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900"
+                onclick="previousStep(3)"
+              >
+                Atras
+              </button>
+              <button
+                class="w-1/2 mt-4 px-4 py-2 bg-yellow-400 text-black rounded hover:bg-yellow-500"
+                onclick="nextStep(4)"
+              >
+                Siguiente
+              </button>
+            </div>
+          </div>
+
+          <div id="step4" class="space-y-4">
             <h2>Paga tu documento y recibelo en instante en tu correo</h2>
           
             <!-- Sección para pagar con Transbank -->
